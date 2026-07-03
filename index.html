@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>AmiJoy Arcade</title>
+  <style>
+    /* OGÓLNY STYL */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1a0033, #0d1b40);
+      margin: 0;
+      padding: 0;
+      color: #e0e0e0;
+    }
+
+    a {
+      color: #ff66cc;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    a:hover {
+      text-shadow: 0 0 8px #ff66cc;
+    }
+
+    header, section, footer {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 25px;
+      background: rgba(20, 20, 40, 0.9);
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 105, 180, 0.3),
+                  0 0 25px rgba(0, 255, 255, 0.2);
+    }
+
+    header img {
+      max-width: 800px;
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto 20px;
+      filter: drop-shadow(0 0 12px #00ffe0);
+    }
+
+    h2 {
+      text-align: center;
+      color: #00ffe0;
+      margin-bottom: 15px;
+      text-shadow: 0 0 6px #00ffe0, 0 0 12px #ff00ff;
+      font-weight: bold;
+    }
+
+    p {
+      line-height: 1.6;
+      margin: 10px 0;
+      text-align: justify;
+    }
+
+    ul {
+      list-style: square;
+      margin-left: 20px;
+      line-height: 1.6;
+    }
+
+    .photos {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 20px 0;
+    }
+    .photos img {
+      max-width: 450px;
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 12px #ff00ff, 0 0 25px #00ffe0;
+      transition: transform 0.3s;
+    }
+    .photos img:hover {
+      transform: scale(1.05);
+    }
+
+    /* FORMULARZ */
+    form {
+      background: rgba(40, 10, 70, 0.85);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,255,255,0.2);
+      max-width: 500px;
+      margin: 20px auto;
+    }
+    input, textarea, button {
+      width: 100%;
+      margin: 8px 0;
+      padding: 12px;
+      border: 1px solid #6600cc;
+      border-radius: 6px;
+      font-size: 14px;
+      background: #1a0033;
+      color: #fff;
+    }
+    button {
+      background: linear-gradient(90deg, #ff00cc, #00ffe0);
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    button:hover {
+      filter: brightness(1.2);
+      box-shadow: 0 0 12px #ff66cc, 0 0 20px #00ffe0;
+    }
+
+    /* YOUTUBE */
+    .iframe-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin: 20px 0;
+    }
+    .iframe-container iframe {
+      max-width: 320px;
+      width: 100%;
+      height: 180px;
+      border-radius: 10px;
+      border: 2px solid #6600cc;
+      box-shadow: 0 0 12px rgba(255, 0, 255, 0.6);
+    }
+
+    /* LINK PDF */
+    .pdf-link {
+      display: inline-block;
+      padding: 12px 25px;
+      background: linear-gradient(90deg, #00ffe0, #ff00cc);
+      color: white;
+      border-radius: 8px;
+      font-weight: bold;
+      margin: 10px 0;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .pdf-link:hover {
+      box-shadow: 0 0 12px #ff00cc, 0 0 20px #00ffe0;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: #aaa;
+      margin-bottom: 40px;
+      text-shadow: 0 0 5px #00ffe0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="amijoy_arcade_logo.png" alt="AmiJoy Logo">
+  <p>
+    <strong>AmiJoy Arcade</strong> to zaawansowany, uniwersalny kontroler retro stworzony z myślą o miłośnikach klasycznego gamingu. Nie jest to masowy produkt z taśmy montażowej ani dzieło wielkiej korporacji. To w 100% projekt fanowski, który narodził się z czystej, bezkompromisowej pasji do elektronicznej rozrywki i kultury retro. Głównym celem przy jego projektowaniu było stworzenie absolutnie wszechstronnego urządzenia. Takiego, który stanie się pomostem łączącym dwa zupełnie różne światy – magię klasycznych maszyn z nowoczesną technologią.
+  </p>
+  <p>
+    Projektując ten kontroler, staraliśmy się podejść do tematu bezkompromisowo. Zamiast szukać najtańszych zamienników, postawiliśmy na wyselekcjonowane i sprawdzone podzespoły. Każdy element został dobrany tak, aby zapewnić doskonałą precyzję, świetne wyczucie ruchów oraz maksymalną przyjemność z każdej minuty spędzonej przy grze.
+  </p>
+</header>
+
+<section>
+  <h2>AmiJoy Arcade – Edycja Retro Matasek</h2>
+  <p>
+    Ten projekt powstał we współpracy z kanałem Retro Matasek, który odpowiada za design (oprawę graficzną), testy urządzenia oraz konsultacje techniczne.
+  </p>
+</section>
+
+
+<section>
+  <div class="photos">
+    <img src="photos_arcade/amijoy_arcade_01.png" alt="AmiJoy">
+   
+  </div>
+</section>
+
+<section>
+  <h2>Kontakt i zamówienia</h2>
+  <p>
+    Jeśli jesteś zainteresowany zakupem, proszę o wypełnienie powyższego formularza.<br>
+    Cena kontrolera Amijoy Arcade wynosi <strong>xxx zł</strong> z wysyłką Pocztą Polską za pobraniem.<br>
+    Po przesłaniu wiadomości skontaktuję się z Tobą w celu potwierdzenia dostępności, czasu realizacji oraz szczegółów dotyczących dostawy.
+    Proszę o inforamcję o tym czy kontroler ma być wyposażony w przyssawki czy tylko w gumowe podkładki.
+  </p>
+  <p>
+    W razie pytań możesz skontaktować się ze mną bezpośrednio: <br>
+    <li> email: <a href="mailto:amigajoystick@gmail.com">amigajoystick@gmail.com</a></li>
+    lub 
+    <li>poprzez formularz dostępny poniżej</li>
+  </p>
+  <p style="font-size:14px; color:#aaa;">
+    Zachęcam do kontaktu – odpowiem na wszystkie zgłoszenia jak najszybciej!
+  </p>
+
+  <p style="text-align:center;">
+<iframe data-tally-src="https://tally.so/embed/LZgAOz?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="372" frameborder="0" marginheight="0" marginwidth="0" title="Amijoy Arcade"></iframe>
+<script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+</p>
+</section>
+
+
+
+<section>
+  <h2>Dlaczego warto wybrać AmiJoy Arcade</h2>
+  <p style="text-align:center;">
+    Jeden kontroler, nieskończone możliwości
+  </p>
+  <p style="text-align:center;">
+    Amijoy Arcade został stworzony po to, abyś nie musiał żonglować różnymi kontrolerami na biurku. Jego unikalna konstrukcja pozwala na współpracę z ogromną paletą urządzeń:
+  </p>
+  <ul>
+    <li><strong>Klasyczne maszyny retro </strong> – podłączysz go bezpośrednio do kultowych komputerów, takich jak Amiga czy Commodore 64, ciesząc się natywną obsługą.</li>
+    <li><strong>Nowoczesne platformy </strong> – dzięki wbudowanej łączności USB oraz Bluetooth, bez problemu współpracuje ze współczesnymi komputerami i systemami.</li>
+    <li><strong>Adaptery bezprzewodowe </strong>– doskonała kompatybilność pozwala na parowanie kontrolera poprzez zewnętrzne odbiorniki Bluetooth (np. 8BitDo) bezpośrednio z klasycznymi konsolami i komputerami starej generacji.</li>
+    <li><strong>2-prędkościowy Autofire: </strong> Dostępny dla przycisku Fire1 (w trybie Classic) oraz dla przycisku A (w trybach USB i Bluetooth).</li>
+    <li><strong>Zaawansowane sterowanie Autofire: </strong> Możliwość stałego włączenia funkcji lub podmapowania jej pod przyciski X i R2 za pomocą fizycznych przełączników.</li>
+    <li><strong>Tryb Jump (Skok): </strong> Możliwość szybkiego ustawienia przycisków L2 oraz Y w tryb odpowiedzialny za skakanie.</li>
+    <li><strong>Obsługa do 3 przycisków Fire </strong> w trybie Amiga oraz na systemach kompatybilnych.</li>
+    <li><strong>Obsługa Fire 2 dla C64: </strong> Dedykowane wsparcie dla drugiego przycisku Fire w Commodore 64, aktywowane za pomocą dedykowanego przełącznika.</li>
+
+  </ul>
+  <p>
+
+  </p>
+</section>
+
+<section>
+  <p>
+    <h2>Dowiedz się więcej pobierając instrukcję obsługi.</h2>
+  </p>
+  <p style="text-align:center;"><a href="amijoy_arcade_instrukcja.pdf" download class="pdf-link">Pobierz instrukcję PDF</a></p>
+</section>
+
+<section>
+  <h2>Materiały wideo</h2>
+  <p style="text-align:center;">Wkrótce znajdziesz tutaj krótkie filmy instruktażowe, które krok po kroku wyjaśnią działanie wszystkich funkcji i trybów kontrolera.</p>
+<!-- 
+  <div class="iframe-container">
+
+    <iframe src="https://www.youtube.com/embed/ZNGq2D3Gfag" title="AmiJoy Xtreme Racing Amiga1200 PiStorm" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/mhqMzQxplyw" title="Amijoy the spectrum" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/Ti24QvJxMMQ" title="Amijoy usb a500 mini" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/ozlvHmCgEqI" title="Amijoy retropie mame" allowfullscreen></iframe>
+  </div>
+  <p style="text-align:center; margin-top:15px;">
+    Zobacz więcej filmów na kanale: <br>
+    <a href="https://www.youtube.com/playlist?list=PLZwRIupELg72KYfDCNkU89hNP5BiiKEJB" target="_blank">Kliknij tutaj, aby przejść do playlisty</a>
+  </p>
+-->
+</section>
+<!--
+<section>
+  <h2>Opinie innych</h2>
+  <p style="text-align:center;">Zobacz recenzje i testy przygotowane przez youtuberów – opinie z pierwszej ręki, porównania i praktyczne wrażenia.</p>
+  <div class="iframe-container">
+    <iframe src="https://www.youtube.com/embed/Ao0gEXnBbeo" title="Recenzja AmiJoy" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/2p0d0ncxgu0" title="LIVE - Test AmiJoy" allowfullscreen></iframe>
+  </div>
+</section>
+-->
+
+
+<footer>
+  © 2026 AmiJoy Arcade - marggines
+</footer>
+
+</body>
+</html>
